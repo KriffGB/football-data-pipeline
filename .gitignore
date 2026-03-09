@@ -1,0 +1,13 @@
+# Entornos y credenciales (Seguridad)
+venv/
+.env
+gcp_credentials.json
+
+# Datos crudos y cachés
+data/
+__pycache__/
+*.pyc
+
+# Archivos y carpetas de pruebas locales
+test_stats.json
+scripts/
