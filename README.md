@@ -41,6 +41,7 @@ football-data-pipeline/
 │
 ├── .gitignore               # Ignored files (credentials, virtual envs, local caches)
 └── README.md                # Project documentation
+```bash
 
 - Power BI Dashboard
 
