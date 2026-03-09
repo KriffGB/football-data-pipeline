@@ -46,11 +46,11 @@ football-data-pipeline/
 
 <h3 align="center">Dynamic Tournaments Filtering</h3>
 <p align="center">
-  <img src="screenshots/premier_view.png" width="48%" alt="Premier League View" />
-  <img src="screenshots/championship_view.png" width="48%" alt="Championship View" />
+<img src="screenshots/premier_view.png" width="48%" alt="Premier League View" />
+<img src="screenshots/championship_view.png" width="48%" alt="Championship View" />
 </p>
 <p align="center">
-  <i>This dashboard utilizes dimensional modeling to dynamically filter league standings, team statistics, and player metrics across the top 4 English divisions. The cascade relational structure ensures instant data cross-filtering upon selecting a tournament.</i>
+<i>This dashboard utilizes dimensional modeling to dynamically filter league standings, team statistics, and player metrics across the top 4 English divisions. The cascade relational structure ensures instant data cross-filtering upon selecting a tournament.</i>
 </p>
 
 - How to Run Locally
