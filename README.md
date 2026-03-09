@@ -1,14 +1,14 @@
-# ⚽ English Football Analytics - Serverless ETL Pipeline
+# English Football Analytics - Serverless ETL Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-GCP-blue?logo=googlecloud)
 ![BigQuery](https://img.shields.io/badge/BigQuery-Data_Warehouse-blue?logo=googlebigquery)
 ![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-yellow?logo=powerbi)
 
-## 📌 Overview
+## Overview
 This project is an automated, serverless ETL (Extract, Transform, Load) pipeline that extracts real-time football data from the top 4 English leagues (Premier League, Championship, League One, and League Two). It processes standings, team metrics, and player statistics, storing the clean data in a Cloud Data Warehouse for business intelligence visualization.
 
-## 🏗️ Architecture & Technologies
+## Architecture & Technologies
 
 * **Data Source:** SofaScore API (via RapidAPI REST endpoints).
 * **Extraction & Transformation:** Python (`requests`, `pandas`).
@@ -16,7 +16,7 @@ This project is an automated, serverless ETL (Extract, Transform, Load) pipeline
 * **Data Warehouse:** Google BigQuery.
 * **Data Visualization:** Power BI (Relational Data Modeling).
 
-## ⚙️ Pipeline Workflow
+## Pipeline Workflow
 
 1. **Trigger:** Cloud Scheduler initiates the pipelines every Monday morning.
 2. **Extract:** Two independent Cloud Functions fetch JSON data from the API:
@@ -26,7 +26,7 @@ This project is an automated, serverless ETL (Extract, Transform, Load) pipeline
 4. **Load:** The transformed data is loaded via `google-cloud-bigquery` directly into dimensional and fact tables in BigQuery (`WRITE_TRUNCATE` mode to maintain fresh data).
 5. **Visualize:** Power BI connects to BigQuery in Import Mode, utilizing a cascading relational model (Tournaments -> Teams -> Players) to filter insights dynamically.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 football-data-pipeline/
