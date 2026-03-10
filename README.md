@@ -41,3 +41,22 @@ football-data-pipeline/
 │
 ├── .gitignore               # Ignored files (credentials, virtual envs, local caches)
 └── README.md                # Project documentation
+```
+
+## Power BI Dashboard
+
+<h3 align="center">Dynamic Tournaments Filtering</h3>
+<p align="center">
+  <img src="screenshots/premier_view.png" width="48%" alt="Premier League View" />
+  <img src="screenshots/championship_view.png" width="48%" alt="Championship View" />
+</p>
+<p align="center">
+  <i>This dashboard utilizes dimensional modeling to dynamically filter league standings, team statistics, and player metrics across the top 4 English divisions. The cascade relational structure ensures instant data cross-filtering upon selecting a tournament.</i>
+</p>
+
+## How to Run Locally
+1. Clone the repository.
+2. Create a virtual environment and install dependencies: `pip install -r teams_etl/requirements.txt`
+3. Set up your Google Cloud Service Account and generate a `gcp_credentials.json` key.
+4. Set your environment variables for `API_KEY` and `PROJECT_ID`.
+5. Run the `main.py` files locally to test the extraction and BigQuery load.
