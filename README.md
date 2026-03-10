@@ -28,6 +28,7 @@ This project is an automated, serverless ETL (Extract, Transform, Load) pipeline
 
 ## Repository Structure
 
+```text
 football-data-pipeline/
 │
 ├── teams_etl/
